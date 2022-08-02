@@ -1,0 +1,15 @@
+let handler = async (m, { conn }) => {
+m.reply('_1 Limit Telah Digunakan._')
+m.reply('_Tunggu Kids. . ._')
+	conn.sendFile(m.chat, 'https://yog-apikey.herokuapp.com/api/bokep?apikey=YogGanz', 'asupan.mp4', 'Astaghfirullah Tobat Kak', m)
+}
+handler.help = ['bkp']
+handler.tags = ['asupan']
+
+handler.command = /^(bkp)$/i
+handler.premium = true
+handler.register = true
+handler.limit = 1
+module.exports = handler
+
+
