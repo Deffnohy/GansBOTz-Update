@@ -1,5 +1,5 @@
 {
-  "name": "pentabot",
+  "name": "GansBOTz",
   "version": "7.6.98",
   "description": "Customizable WhatsApp Bot",
   "depecrated": false,
@@ -25,14 +25,14 @@
     "MD",
     "baileys-md"
   ],
-  "homepage": "https://github.com/arivpns",
-  "author": "Gempy Ton",
+  "homepage": "https://github.com/deffnohy",
+  "author": "Deffri Gans",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arivpns"
+    "url": "git+https://github.com/deffnohy"
   },
   "bugs": {
-    "url": "https://github.com/arivpns"
+    "url": "https://github.com/deffnohy"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
