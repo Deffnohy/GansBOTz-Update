@@ -1,4 +1,3 @@
-//console.log('Starting to run GEMPY...') //CREATOR - DEVBOT,ARIETUBE,GEMPYTON
 const moment = require("moment-timezone")
 const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
 let cluster = require('cluster')
@@ -234,36 +233,24 @@ console.log(color(tampilTanggal, "pink"));
 console.log(color(tampilWaktu, "pink"));
 console.log(color(tampilHari, "pink"));
 
-CFonts.say('CREATED\nBY GEMPY TON', {
+CFonts.say('OWNER\nBY Deffri Gans', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`${package.name} By ${package.author.name || package.author}`, {
-  font: 'console',
-  align: 'center',
-  gradient: ['red', 'magenta']
-})
 CFonts.say(`${package.name}`, {
-  font: 'simple3d',
+  font: 'block',
   align: 'center',
   gradient: ['red', 'magenta']
 })
 
 var isRunning = false
-/**
- * Start a js file
- * @param {String} file `path/to/file`
- */
+
 function start(file) {
   if (isRunning) return
   isRunning = true
   let args = [path.join(__dirname, file), ...process.argv.slice(2)]
-/*  CFonts.say([process.argv[0], ...args].join(' '), {
-    font: 'console',
-    align: 'center',
-    gradient: ['red', 'magenta']
-  })*/
+  
   cluster.setupMaster({
     exec: path.join(__dirname, file),
     args: args.slice(1),
